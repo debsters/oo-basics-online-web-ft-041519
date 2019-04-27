@@ -1,7 +1,7 @@
 class Shoe
 
 attr_accessor
-attr_reader :brand :condition
+attr_reader :brand 
 
 def initialize(brand)
   @brand = brand
@@ -9,6 +9,10 @@ end
 
 def condition=(condition = "old")
   @condition = condition
+end
+
+def condition
+  @condition
 end
 
 def cobble
